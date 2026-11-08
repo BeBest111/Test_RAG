@@ -1,0 +1,47 @@
+﻿UI_TIEN_01  Pass    2.3s Refresh/Upload/List hiển thị: True
+UI_TIEN_02  Fail    3.6s Trạng thái rỗng: True -> 'No documents loaded. Upload files or refresh from PrivateGPT.'
+UI_TIEN_03  Pass   54.0s Toast: Refreshing documents... | Uploading ui_upload_test.txt...; có trong danh sách: True
+UI_TIEN_04  Pass   77.4s Danh sách sau upload: ['Nội quy công ty.txt', 'ui_multi_a.txt', 'quy_dinh_bao_mat.txt', 'gio_lam_viec.txt', 'ui_multi_b.txt', 'b255.txt']
+UI_TIEN_05  Fail   10.8s Toast: Refreshing documents... | Refreshing document list...; zip trong danh sách: False
+UI_TIEN_06  Pass    6.1s 0 dòng; sai badge: []
+UI_VINH_01  Pass   31.2s meta='noi_quy · nhom11', có Delete: True
+UI_VINH_02  Fail   26.5s Có refresh_check.txt: False
+UI_VINH_03  Fail   62.3s EXCEPTION TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#documentsList .source-row").filter(has_text="refr
+UI_VINH_04  Fail   68.4s EXCEPTION TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#documentsList .source-row").filter(has_text="refr
+UI_VINH_05  Fail    6.3s Các nút có: []
+UI_VINH_06  Fail    1.3s index.html gán cứng status 'Indexed' cho mọi tài liệu: True; có trạng thái Processing: False
+UI_VINH_07  Pass   16.3s Nội dung: 'No documents loaded. Upload files or refresh from PrivateGPT.'
+UI_MANH_01  Pass    1.5s Số chat 1->2, active='New chat'
+UI_MANH_02  Pass    2.2s Tiêu đề: 'Hỏi về nghỉ phép'
+UI_MANH_03  Pass    2.4s {'ov': 'ellipsis', 'trunc': True, 'hscroll': False}
+UI_MANH_04  Pass   41.8s Hộp thoại: 'Delete chat
+×
+
+Delete "New chat"? This cannot be undone.
+
+Cancel
+Delete'; số chat 2->1
+UI_MANH_05  Pass    3.6s Danh sách sau reload: ['Lưu trữ test', 'New chat']
+UI_MANH_06  Fail   41.4s EXCEPTION TimeoutError: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#modelSelectBtn")
+    - locator resolved to <button d
+UI_MANH_07  Pass    1.6s value='dòng 1\ndòng 2', số tin đã gửi=0
+UI_MANH_08  Fail   20.2s Toast: ; giá trị đã lưu: 'abc xyz'
+UI_MANH_09  Fail   62.7s EXCEPTION TimeoutError: Page.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#privateGptUsername")
+    - locator resolved to <input
+UI_MANH_10  Fail   38.0s EXCEPTION TimeoutError: Page.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#privateGptUsername")
+    - locator resolved to <input
+UI_MANH_11  Fail   34.4s EXCEPTION TimeoutError: Page.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#privateGptUsername")
+    - locator resolved to <input
+UI_MANH_12  Pass    6.6s scrollWidth=375, clientWidth=375, composer hiển thị: True

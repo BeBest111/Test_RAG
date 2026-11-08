@@ -1,0 +1,11 @@
+﻿UI_TIEN_02  Fail   11.7s Trạng thái rỗng: True -> 'No documents loaded. Upload files or refresh from PrivateGPT.'
+UI_TIEN_05  Pass   71.1s Toast: Documents refreshed. | Refreshing document list... | Upload failed for archive.zip: 400 Bad Request; zip trong danh sách: False
+UI_TIEN_06  Pass   41.3s 8 dòng; sai badge: []
+UI_VINH_02  Fail  186.8s EXCEPTION TimeoutError: Page.wait_for_function: Timeout 180000ms exceeded.
+UI_VINH_03  Fail  222.6s EXCEPTION TimeoutError: Page.wait_for_function: Timeout 180000ms exceeded.
+UI_VINH_04  Fail  181.5s EXCEPTION TimeoutError: Page.wait_for_function: Timeout 180000ms exceeded.
+UI_VINH_05  Fail   41.1s Các nút có: ['Delete']
+UI_MANH_06  Pass    3.0s Dropdown: 'llama3.2:latest\nqwen2.5:3b'
+UI_MANH_09  Pass    3.0s Toast: Enter both username and password for HTTP Basic auth.
+UI_MANH_10  Pass    6.8s Lộ chuỗi Basic trong Debugger: False; có chữ 'redacted': False
+UI_MANH_11  Fail    3.3s Mật khẩu dạng rõ trong localStorage: True

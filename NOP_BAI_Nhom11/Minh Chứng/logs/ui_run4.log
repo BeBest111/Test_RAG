@@ -1,0 +1,15 @@
+﻿UI_VINH_02  Pass   67.0s Nạp API HTTP 200; có vinh_ui_135840.txt trên UI sau Refresh: True
+UI_VINH_03  Pass   92.1s Còn trên UI: True, còn trên server: True
+UI_VINH_04  Pass   91.6s Hộp thoại: '['Delete vinh_ui_135840?']'; Toast: Document deleted.; mất trên UI True, server True
+UI_DUY_01   Fail   21.7s [19s] PrivateGPT
+
+Xin lỗi, tôi không có thông tin cụ thể về vị trí của phòng máy chủ của công ty Sao Mai
+UI_DUY_02   Pass    7.3s Thấy chỉ báo chờ: True
+UI_DUY_03   Pass    9.8s [7s] thẻ thô: False, số nút trích dẫn: 0; PrivateGPT
+
+Tôi xin lỗi, nhưng thông tin cụ thể về thuật toán mã hóa mật mã mức Mật được sử dụng trong các h
+UI_DUY_04   Fail   13.0s [10s] Không có nút trích dẫn nào được sinh ra -> không mở được popup. PrivateGPT
+
+Tôi xin lỗi, nhưng tôi không có thông tin cụ thể về thuật ngữ "Hotli
+UI_DUY_05   Fail   12.0s [7s] số khối details: 0, đang mở: 0
+UI_DUY_06   Pass    2.5s Menu: 'Add files\nKNOWLEDGE\nDocuments\nTabular\nWeb\nCODE\nCode Execution\nDATABASES\nNo databases configured.\nMCP\nNo mcp configured.\n'

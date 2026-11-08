@@ -1,0 +1,214 @@
+[
+ {
+  "collection": "nhom11_conc_135032",
+  "ingest_status": [
+   [
+    0,
+    200,
+    18.3
+   ],
+   [
+    1,
+    200,
+    18.7
+   ],
+   [
+    2,
+    200,
+    18.3
+   ],
+   [
+    3,
+    400,
+    2.6
+   ],
+   [
+    4,
+    400,
+    2.3
+   ],
+   [
+    5,
+    200,
+    18.1
+   ]
+  ],
+  "listed": [
+   "conc_1"
+  ],
+  "missing_from_list": [
+   "conc_0",
+   "conc_2",
+   "conc_3",
+   "conc_4",
+   "conc_5"
+  ],
+  "content_status": {
+   "conc_0": 500,
+   "conc_1": 200,
+   "conc_2": 500,
+   "conc_3": 400,
+   "conc_4": 400,
+   "conc_5": 400
+  }
+ },
+ {
+  "collection": "nhom11_conc_151309",
+  "ingest_status": [
+   [
+    0,
+    200,
+    21.3
+   ],
+   [
+    1,
+    400,
+    2.5
+   ],
+   [
+    2,
+    200,
+    22.3
+   ],
+   [
+    3,
+    200,
+    21.6
+   ],
+   [
+    4,
+    200,
+    21.7
+   ],
+   [
+    5,
+    200,
+    21.8
+   ]
+  ],
+  "listed": [
+   "conc_2"
+  ],
+  "missing_from_list": [
+   "conc_0",
+   "conc_1",
+   "conc_3",
+   "conc_4",
+   "conc_5"
+  ],
+  "content_status": {
+   "conc_0": 400,
+   "conc_1": 400,
+   "conc_2": 200,
+   "conc_3": 400,
+   "conc_4": 400,
+   "conc_5": 400
+  }
+ },
+ {
+  "collection": "nhom11_conc_151850",
+  "ingest_status": [
+   [
+    0,
+    500,
+    2.2
+   ],
+   [
+    1,
+    200,
+    11.1
+   ],
+   [
+    2,
+    500,
+    2.2
+   ],
+   [
+    3,
+    500,
+    2.2
+   ],
+   [
+    4,
+    200,
+    11.2
+   ],
+   [
+    5,
+    400,
+    2.2
+   ]
+  ],
+  "listed": [
+   "conc_4"
+  ],
+  "missing_from_list": [
+   "conc_0",
+   "conc_1",
+   "conc_2",
+   "conc_3",
+   "conc_5"
+  ],
+  "content_status": {
+   "conc_0": 400,
+   "conc_1": 500,
+   "conc_2": 400,
+   "conc_3": 400,
+   "conc_4": 200,
+   "conc_5": 400
+  }
+ },
+ {
+  "collection": "nhom11_conc_153449",
+  "ingest_status": [
+   [
+    0,
+    400,
+    2.2
+   ],
+   [
+    1,
+    500,
+    2.2
+   ],
+   [
+    2,
+    200,
+    11.0
+   ],
+   [
+    3,
+    400,
+    2.2
+   ],
+   [
+    4,
+    400,
+    2.2
+   ],
+   [
+    5,
+    500,
+    2.2
+   ]
+  ],
+  "listed": [
+   "conc_2"
+  ],
+  "missing_from_list": [
+   "conc_0",
+   "conc_1",
+   "conc_3",
+   "conc_4",
+   "conc_5"
+  ],
+  "content_status": {
+   "conc_0": 400,
+   "conc_1": 400,
+   "conc_2": 200,
+   "conc_3": 400,
+   "conc_4": 400,
+   "conc_5": 400
+  }
+ }
+]

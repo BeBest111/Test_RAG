@@ -1,0 +1,134 @@
+{
+ "BB_TIEN_06": {
+  "id": "BB_TIEN_06",
+  "owner": "TIEN",
+  "technique": "Phân tích giá trị biên (kích thước = 0)",
+  "title": "Nạp file rỗng 0 byte",
+  "data": "empty.txt (base64 rỗng)",
+  "expected": "HTTP 400, thông báo file rỗng",
+  "actual": "HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Invalid Request Error\",\"detail\":{\"code\":\"INVALID_REQUEST_ERROR\",\"explanation\":[{\"type\":\"value_error\",\"loc\":\"('bod",
+  "status": "Pass",
+  "seconds": 2.0
+ },
+ "BB_TIEN_07": {
+  "id": "BB_TIEN_07",
+  "owner": "TIEN",
+  "technique": "Phân hoạch tương đương (lớp không hợp lệ)",
+  "title": "Base64 không hợp lệ",
+  "data": "input.value='@@@###'",
+  "expected": "HTTP 400",
+  "actual": "HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Invalid Request Error\",\"detail\":{\"code\":\"INVALID_REQUEST_ERROR\",\"explanation\":[{\"type\":\"value_error\",\"loc\":\"('bod",
+  "status": "Pass",
+  "seconds": 0.0
+ },
+ "BB_TIEN_10": {
+  "id": "BB_TIEN_10",
+  "owner": "TIEN",
+  "technique": "Phân tích giá trị biên (max+1 = 256)",
+  "title": "artifact dài 256 ký tự",
+  "data": "artifact = 'a'*256",
+  "expected": "HTTP 400/422 - vượt độ dài",
+  "actual": "HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Invalid Request Error\",\"detail\":{\"code\":\"INVALID_REQUEST_ERROR\",\"explanation\":[{\"type\":\"string_too_long\",\"loc\":\"(",
+  "status": "Pass",
+  "seconds": 0.0
+ },
+ "BB_TIEN_13": {
+  "id": "BB_TIEN_13",
+  "owner": "TIEN",
+  "technique": "Đoán lỗi (định dạng bị cấm)",
+  "title": "Nạp file nén .zip",
+  "data": "archive.zip chứa 1 file txt",
+  "expected": "HTTP 400 - định dạng bị từ chối",
+  "actual": "HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Invalid Request Error\",\"detail\":{\"code\":\"INVALID_REQUEST_ERROR\",\"explanation\":\"InvalidFileError(errors=['zpgt.ing",
+  "status": "Pass",
+  "seconds": 0.1
+ },
+ "BB_TIEN_16": {
+  "id": "BB_TIEN_16",
+  "owner": "TIEN",
+  "technique": "Kiểm thử bảo mật (path traversal)",
+  "title": "artifact/collection chứa '../'",
+  "data": "artifact='../../evil', collection='../escape'",
+  "expected": "HTTP 400 - tên không hợp lệ bị từ chối",
+  "actual": "HTTP 200: {\"object\":\"list\",\"model\":\"private-gpt\",\"data\":[]}",
+  "status": "Fail",
+  "seconds": 2.1
+ },
+ "BB_TIEN_17": {
+  "id": "BB_TIEN_17",
+  "owner": "TIEN",
+  "technique": "Kiểm thử bảo mật (đọc file cục bộ qua URI)",
+  "title": "input.type=uri trỏ tới file hệ thống",
+  "data": "input={type:uri, value:'C:\\\\Windows\\\\win.ini'}",
+  "expected": "HTTP 400 - chỉ chấp nhận http(s)/s3",
+  "actual": "HTTP 200: {\"object\":\"list\",\"model\":\"private-gpt\",\"data\":[]} -> NỘI DUNG FILE HỆ THỐNG ĐÃ BỊ LẬP CHỈ MỤC",
+  "status": "Fail",
+  "seconds": 2.1
+ },
+ "BB_VINH_03": {
+  "id": "BB_VINH_03",
+  "owner": "VINH",
+  "technique": "Phân hoạch tương đương (thiếu tham số)",
+  "title": "Liệt kê không truyền collection",
+  "data": "GET /v1/artifacts/list",
+  "expected": "HTTP 400/422 - thiếu collection",
+  "actual": "HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Invalid Request Error\",\"detail\":{\"code\":\"INVALID_REQU",
+  "status": "Pass",
+  "seconds": 0.0
+ },
+ "BB_VINH_06": {
+  "id": "BB_VINH_06",
+  "owner": "VINH",
+  "technique": "Phân hoạch tương đương (không tồn tại)",
+  "title": "Xóa artifact không tồn tại",
+  "data": "artifact=khong_co_that",
+  "expected": "HTTP 404 Not Found",
+  "actual": "HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Invalid Request Error\",\"detail\":{\"code\":\"INVALID_REQUEST_ERROR\",\"explanation\":\"VectorArtifact",
+  "status": "Fail",
+  "seconds": 0.0
+ },
+ "BB_VINH_11": {
+  "id": "BB_VINH_11",
+  "owner": "VINH",
+  "technique": "Phân hoạch tương đương (giá trị enum sai)",
+  "title": "Xem nội dung với format='xml'",
+  "data": "format=xml",
+  "expected": "HTTP 400/422",
+  "actual": "HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Invalid Request Error\",\"detail\":{\"code\":\"INVALID_REQU",
+  "status": "Pass",
+  "seconds": 0.0
+ },
+ "BB_MANH_01": {
+  "id": "BB_MANH_01",
+  "owner": "MANH",
+  "technique": "Phân hoạch tương đương (lớp hợp lệ)",
+  "title": "Lấy danh sách mô hình",
+  "data": "GET /v1/models",
+  "expected": "HTTP 200, có qwen2.5:3b và llama3.2:latest",
+  "actual": "HTTP 200, ids=['llama3.2:latest', 'qwen2.5:3b']",
+  "status": "Pass",
+  "seconds": 0.0
+ },
+ "BB_MANH_03": {
+  "id": "BB_MANH_03",
+  "owner": "MANH",
+  "technique": "Phân hoạch tương đương (không tồn tại)",
+  "title": "Lấy mô hình không tồn tại",
+  "data": "GET /v1/models/gpt-99",
+  "expected": "HTTP 404 Not Found",
+  "actual": "HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Invalid Request Error\",\"detail\":{\"code\":\"INVALID_REQUEST_ERROR\",\"explanat",
+  "status": "Fail",
+  "seconds": 0.0
+ },
+ "BB_MANH_11": {
+  "id": "BB_MANH_11",
+  "owner": "MANH",
+  "technique": "Phân tích giá trị biên (temperature > 1)",
+  "title": "temperature = 1.5",
+  "data": "temperature=1.5",
+  "expected": "HTTP 400/422",
+  "actual": "HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Invalid Request Error\",\"detail\":{\"code\":\"INVALID_REQUEST_ERROR\",\"explanat",
+  "status": "Pass",
+  "seconds": 0.0
+ }
+}

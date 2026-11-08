@@ -1,0 +1,12 @@
+﻿UI_VINH_02  Pass   58.3s Nạp API HTTP 200; có vinh_ui_135152.txt trên UI sau Refresh: True
+UI_VINH_03  Pass   89.4s Còn trên UI: True, còn trên server: True
+UI_VINH_04  Fail   87.9s Hộp thoại: '['Delete vinh_ui_135152?']'; Toast: Deleting document...; mất trên UI False, server True
+UI_DUY_01   Fail    5.5s [3s] PrivateGPT
+Working
+UI_DUY_02   Fail    8.1s Thấy chỉ báo chờ: False
+UI_DUY_03   Pass   16.4s [3s] thẻ thô: False, số nút trích dẫn: 0; PrivateGPT
+Working
+UI_DUY_04   Fail   10.9s [3s] Không có nút trích dẫn nào được sinh ra -> không mở được popup. PrivateGPT
+Working
+UI_DUY_05   Fail    6.9s [3s] số khối details: 0, đang mở: 0
+UI_DUY_06   Pass    3.8s Menu: 'Add files\nKNOWLEDGE\nDocuments\nTabular\nWeb\nCODE\nCode Execution\nDATABASES\nNo databases configured.\nMCP\nNo mcp configured.\n'

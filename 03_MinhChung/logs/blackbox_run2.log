@@ -1,0 +1,46 @@
+﻿bao_mat 200
+hoan_tien 200
+bang_gia 200
+nghi_phep 200
+faq 200
+BB_TIEN_01  Pass   40.5s  HTTP 200: {"object":"list","model":"private-gpt","data":[{"object":"ingest.document","artifact":"bao_mat","doc_metadata":{"file_na
+BB_TIEN_02  Pass   73.9s  HTTP 200: {"object":"list","model":"private-gpt","data":[{"object":"ingest.document","artifact":"hoan_tien","doc_metadata":{"file_
+BB_TIEN_03  Pass   29.3s  HTTP 200: {"object":"list","model":"private-gpt","data":[{"object":"ingest.document","artifact":"bang_gia","doc_metadata":{"file_n
+BB_TIEN_04  Pass   61.9s  HTTP 200: {"object":"list","model":"private-gpt","data":[{"object":"ingest.document","artifact":"nghi_phep","doc_metadata":{"file_
+BB_TIEN_21  Fail    2.5s  HTTP 200: {"object":"list","model":"private-gpt","data":[]} -> data có 0 phần tử
+BB_TIEN_22  Fail    0.0s  HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Invalid Request Error","detail":{"code":"INVALID_REQUEST_ERROR","explanat
+200
+BB_DUY_01   Pass  114.7s  [115s] The relevant information from the documents provided is:
+
+- For employees with less than 5 years of service, they are entitled to 12 days of an
+BB_DUY_02   Pass   53.2s  [53s] The document mentions that the minimum length for a password of an internal account is 12 characters. It also specifies that the password should
+BB_DUY_03   Pass   68.3s  [68s] The relevant information from the provided text is that if you cancel the Pro package, you can get a full refund within 7 days of the payment. A
+BB_DUY_04   Pass   46.3s  [46s] Based on the information provided, the monthly price for the Pro plan is 99,000 VND.
+BB_DUY_05   Pass   41.3s  [41s] Based on the information provided in the document, deleted files are kept in the Trash for 30 days before being permanently removed.
+BB_DUY_06   Fail   85.7s  [86s] The information provided does not directly identify the CEO of Sao Mai Co., Ltd. It appears to be a set of company policies and procedures. To f
+BB_DUY_07   Pass   88.7s  [89s] The information provided does not contain details about the number of annual leave days for employees under 5 years of service. Let me look into
+BB_DUY_08   Pass   81.1s  [81s] The hotline for the SOC (Special Operations Command) team is mentioned in the document with citation identifier <citation id='HIL8' index='0' ar
+BB_DUY_09   Pass   71.0s  [71s] The search results indicate that the server room is located on the 7th floor.
+BB_DUY_10   Pass    0.0s  HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Invalid Request Error","detail":{"code":"INVALID_REQUEST_ERROR","explanat
+BB_DUY_11   Pass    0.1s  HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Invalid Request Error","detail":{"code":"INVALID_REQUEST_ERROR","explanat
+BB_DUY_12   Pass   58.1s  [58s] I'm sorry, but it seems there was no relevant content found for the query "Giá gói Pro mỗi tháng là bao nhiêu". Could you please provide more de
+BB_DUY_13   Fail   58.1s  [39s] The policy states that the device is guaranteed for 12 months. Please note that the advice provided before should be disregarded and only the re
+BB_DUY_14   Pass   56.8s  [57s] The relevant information from the documents provided is:
+
+Điều 3 của Quy định Bảo mật Thông tin của Công ty TNHH Sao Mai yêu cầu rằng mọi sự cố 
+BB_MANH_01  Pass    0.0s  HTTP 200, ids=['llama3.2:latest', 'qwen2.5:3b']
+BB_MANH_02  Pass    0.0s  HTTP 200: {"id":"qwen2.5:3b","created_at":"1970-01-01T00:00:00Z","display_name":"qwen2.5:3b","type":"model","max_tokens":1024,"max
+BB_MANH_03  Fail    0.0s  HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Invalid Request Error","detail":{"code":"INVALID_REQUEST_ERROR","explanat
+BB_MANH_04  Pass    0.0s  HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Invalid Request Error","detail":{"code":"INVALID_REQU
+BB_MANH_05  Pass    0.0s  HTTP 200, len=1, has_more=True
+BB_MANH_06  Pass    0.0s  HTTP 200: {"input_tokens":34}
+BB_MANH_07  Pass    0.0s  HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Invalid Request Error","detail":{"code":"INVALID_REQU
+BB_MANH_08  Pass    6.6s  [7s] Tôi là một AI, không có khả năng biết thông tin cá nhân của bạn. Bạn vừa nói rằng bạn tên là Mạnh.
+BB_MANH_09  Pass   61.9s  [62s] The information provided indicates that for employees with a threirnian of 5 years or more, an additional day of leave is added for every 5 year
+BB_MANH_10  Pass    9.3s  HTTP 200, 53 sự kiện: ['message_start', 'content_block_start', 'content_block_delta']...['message_delta', 'message_stop']
+BB_MANH_11  Pass    0.0s  HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Invalid Request Error","detail":{"code":"INVALID_REQUEST_ERROR","explanat
+BB_MANH_12  Fail    0.0s  HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Invalid Request Error","detail":{"code":"INVALID_REQUEST_ERROR","explanat
+BB_MANH_13  Pass    3.2s  OK
+BB_MANH_14  Fail    2.7s  HTTP 200: {"id":"msg_1a891f1171ed45528280161927938769","type":"message","role":"assistant","content":[{"type":"text","start_timestamp":"2026-11-07T06:
+BB_MANH_15  Pass    0.1s  HTTP 200: {"valid":true,"errors":null}
+BB_MANH_16  Pass    2.2s  [2.2s] 1+1=2

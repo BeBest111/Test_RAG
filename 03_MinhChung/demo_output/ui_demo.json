@@ -1,0 +1,57 @@
+{
+ "UI_MANH_01": {
+  "id": "UI_MANH_01",
+  "owner": "MANH",
+  "title": "Tạo hội thoại mới",
+  "steps": "1. Bấm New Chat",
+  "expected": "Xuất hiện 'New chat' được tô sáng ở đầu danh sách",
+  "actual": "Số chat 1->2, active='New chat'",
+  "status": "Pass",
+  "screenshot": "UI_MANH_01.png",
+  "seconds": 2.2
+ },
+ "UI_MANH_07": {
+  "id": "UI_MANH_07",
+  "owner": "MANH",
+  "title": "Shift+Enter xuống dòng, không gửi",
+  "steps": "1. Gõ 'dòng 1', Shift+Enter, 'dòng 2'",
+  "expected": "Ô nhập có 2 dòng, không có tin nhắn nào được gửi",
+  "actual": "value='dòng 1\\ndòng 2', số tin đã gửi=0",
+  "status": "Pass",
+  "screenshot": "UI_MANH_07.png",
+  "seconds": 3.5
+ },
+ "UI_MANH_02": {
+  "id": "UI_MANH_02",
+  "owner": "MANH",
+  "title": "Đổi tên hội thoại",
+  "steps": "1. Hover dòng chat, bấm Rename  2. Nhập 'Hỏi về nghỉ phép'  3. Lưu",
+  "expected": "Tên mới hiển thị trên sidebar và tiêu đề chat",
+  "actual": "Tiêu đề: 'Hỏi về nghỉ phép'",
+  "status": "Pass",
+  "screenshot": "UI_MANH_02.png",
+  "seconds": 4.1
+ },
+ "UI_MANH_05": {
+  "id": "UI_MANH_05",
+  "owner": "MANH",
+  "title": "Hội thoại được lưu sau khi tải lại trang",
+  "steps": "1. Tạo chat, đặt tên 'Lưu trữ test'  2. Reload (F5)",
+  "expected": "Chat 'Lưu trữ test' vẫn còn",
+  "actual": "Danh sách sau reload: ['Lưu trữ test', 'New chat']",
+  "status": "Pass",
+  "screenshot": "UI_MANH_05.png",
+  "seconds": 5.7
+ },
+ "UI_MANH_08": {
+  "id": "UI_MANH_08",
+  "owner": "MANH",
+  "title": "Validate Base URL không hợp lệ",
+  "steps": "1. Settings  2. Base URL = 'abc xyz'  3. Save",
+  "expected": "Báo lỗi URL không hợp lệ, không lưu",
+  "actual": "Toast: Could not list documents: 404 Not Found | Could not list skills: 404 Not Found | Settings saved.; giá trị đã lưu: 'abc xyz'",
+  "status": "Fail",
+  "screenshot": "UI_MANH_08.png",
+  "seconds": 4.2
+ }
+}

@@ -1,0 +1,20 @@
+NHÓM 11 – MÔN ĐẢM BẢO CHẤT LƯỢNG PHẦN MỀM – ĐỀ TÀI: KIỂM THỬ ỨNG DỤNG RAG
+GVHD: Đào Ngọc Phong – Lớp D22VHCNPM02
+Thành viên: Nguyễn Minh Tiến (B22DVCN308), Nguyễn Bá Quang Vinh (B22DVCN348),
+            Vũ Đức Duy (B22DVCN397), Bùi Văn Mạnh (B22DVCN212)
+
+DANH SÁCH SẢN PHẨM NỘP
+1. 01_KetQua_Review_Nhom11.xlsx   – Kết quả Review (cả nhóm): checklist tài liệu đặc tả, lỗi tài liệu,
+                                     review đặc tả từng chức năng, review code 4 thành viên.
+2. 02_KetQua_KiemThu_Nhom11.xlsx  – Kết quả kiểm thử (ghép 4 cá nhân): kế hoạch, test case & kết quả,
+                                     báo cáo lỗi, hiệu năng, ma trận truy vết, ảnh minh chứng.
+3. 03_MinhChung/                  – Tài liệu minh chứng:
+     DacTa_YeuCau_BoSung_Nhom11.docx  tài liệu đặc tả nhóm bổ sung (use case, mã yêu cầu, NFR)
+     test_scripts/                    mã nguồn kiểm thử (unit, ui Playwright, blackbox, performance, report_gen)
+     logs/                            kết quả chạy thật (JSON, JUnit XML, log server)
+     screenshots/                     ảnh chụp kiểm thử giao diện
+     test_data/                       dữ liệu kiểm thử
+     run_nhom11.ps1, settings-nhom11.yaml  cấu hình chạy hệ thống trên Windows
+
+MÃ NGUỒN HỆ THỐNG ĐƯỢC KIỂM THỬ
+  PrivateGPT – https://github.com/zylon-ai/private-gpt (commit 42ce052)

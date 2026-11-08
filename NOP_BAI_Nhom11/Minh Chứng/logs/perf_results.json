@@ -1,0 +1,46 @@
+[
+ {
+  "test": "PERF_LIST – 100 request, 20 luồng đồng thời GET /v1/artifacts/list",
+  "requests": 100,
+  "errors": 33,
+  "error_rate_pct": 33.0,
+  "avg_s": 52.246,
+  "p50_s": 45.561,
+  "p95_s": 67.174,
+  "max_s": 67.924,
+  "throughput_rps": 0.38
+ },
+ {
+  "test": "PERF_MODELS – 50 request tuần tự GET /v1/models",
+  "requests": 50,
+  "errors": 0,
+  "error_rate_pct": 0.0,
+  "avg_s": 2.832,
+  "p50_s": 2.745,
+  "p95_s": 3.309,
+  "max_s": 3.81,
+  "throughput_rps": 0.35
+ },
+ {
+  "test": "PERF_INGEST – nạp tuần tự 5 văn bản ~60 byte",
+  "requests": 5,
+  "errors": 0,
+  "error_rate_pct": 0.0,
+  "avg_s": 14.843,
+  "p50_s": 13.676,
+  "p95_s": 22.724,
+  "max_s": 22.724,
+  "throughput_rps": 0.07
+ },
+ {
+  "test": "PERF_RAG – 12 câu hỏi RAG (từ BB_DUY_*), qwen2.5:3b trên CPU",
+  "requests": 12,
+  "errors": 0,
+  "error_rate_pct": 0.0,
+  "avg_s": 67.046,
+  "p50_s": 68.287,
+  "p95_s": 88.651,
+  "max_s": 114.678,
+  "throughput_rps": 0.01
+ }
+]

@@ -1,0 +1,7 @@
+QUY ĐỊNH BẢO MẬT THÔNG TIN - CÔNG TY TNHH SAO MAI (tài liệu giả lập phục vụ kiểm thử)
+
+Điều 1. Mật khẩu tài khoản nội bộ phải có tối thiểu 12 ký tự, gồm chữ hoa, chữ thường, chữ số và ký tự đặc biệt. Mật khẩu phải được thay đổi 90 ngày một lần.
+Điều 2. Không được mang thiết bị lưu trữ USB cá nhân vào phòng máy chủ. Phòng máy chủ đặt tại tầng 7, tòa nhà Sao Mai Tower.
+Điều 3. Mọi sự cố bảo mật phải được báo cáo cho Đội ứng cứu sự cố (SOC) qua hotline 1900-7777 trong vòng 30 phút kể từ khi phát hiện.
+Điều 4. Dữ liệu khách hàng được phân loại thành 3 mức: Công khai, Nội bộ, Mật. Dữ liệu mức Mật phải được mã hóa AES-256 khi lưu trữ.
+Điều 5. Vi phạm quy định lần đầu bị khiển trách, lần thứ hai bị trừ 50% thưởng quý.

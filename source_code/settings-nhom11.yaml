@@ -1,0 +1,5 @@
+# Profile cấu hình môi trường kiểm thử Nhóm 11 (PGPT_PROFILES=nhom11)
+qdrant:
+  url: http://localhost:6333
+  path: null
+  prefer_grpc: false

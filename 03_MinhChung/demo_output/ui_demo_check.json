@@ -1,0 +1,24 @@
+{
+ "UI_MANH_02": {
+  "id": "UI_MANH_02",
+  "owner": "MANH",
+  "title": "Đổi tên hội thoại",
+  "steps": "1. Hover dòng chat, bấm Rename  2. Nhập 'Hỏi về nghỉ phép'  3. Lưu",
+  "expected": "Tên mới hiển thị trên sidebar và tiêu đề chat",
+  "actual": "Tiêu đề: 'Hỏi về nghỉ phép'",
+  "status": "Pass",
+  "screenshot": "UI_MANH_02.png",
+  "seconds": 4.9
+ },
+ "UI_MANH_05": {
+  "id": "UI_MANH_05",
+  "owner": "MANH",
+  "title": "Hội thoại được lưu sau khi tải lại trang",
+  "steps": "1. Tạo chat, đặt tên 'Lưu trữ test'  2. Reload (F5)",
+  "expected": "Chat 'Lưu trữ test' vẫn còn",
+  "actual": "Danh sách sau reload: ['Lưu trữ test', 'New chat']",
+  "status": "Pass",
+  "screenshot": "UI_MANH_05.png",
+  "seconds": 6.7
+ }
+}
